@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.day-mode {
+  --bg-color: theme('colors.day.background');
+  --text-color: theme('colors.day.text');
+}
+
+.night-mode {
+  --bg-color: theme('colors.night.background');
+  --text-color: theme('colors.night.text');
+}
+
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.custom-placeholder::placeholder {
+  color: #00000; /* Tailwind color gray-400 */
+  opacity: 1; /* This ensures the opacity is set to 1 so the color is fully applied */
+}
